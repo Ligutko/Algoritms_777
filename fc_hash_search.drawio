@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="Hash_Search" name="Hash_Search">
+    <mxGraphModel dx="883" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="B1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#1A237E;fontColor=#1A237E;fontStyle=1;fontSize=11;strokeWidth=2;" value="search(word)" vertex="1">
+          <mxGeometry height="46" width="160" x="320" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=15;fillColor=#BBDEFB;strokeColor=#0D47A1;fontColor=#0D47A1;fontStyle=1;fontSize=11;strokeWidth=2;" value="Введення: word" vertex="1">
+          <mxGeometry height="46" width="240" x="280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="B3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontColor=#1565C0;fontSize=11;strokeWidth=2;" value="index=_hash(word); comparisons=0; current=table[index]" vertex="1">
+          <mxGeometry height="46" width="240" x="280" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="B4" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#4A148C;fontColor=#4A148C;fontSize=11;strokeWidth=2;" value="current is not None?" vertex="1">
+          <mxGeometry height="80" width="240" x="280" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="B5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontColor=#1565C0;fontSize=11;strokeWidth=2;" value="comparisons += 1" vertex="1">
+          <mxGeometry height="46" width="240" x="280" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="B6" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#4A148C;fontColor=#4A148C;fontSize=11;strokeWidth=2;" value="current.word == word?" vertex="1">
+          <mxGeometry height="80" width="240" x="280" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="B7" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=15;fillColor=#BBDEFB;strokeColor=#0D47A1;fontColor=#0D47A1;fontStyle=1;fontSize=11;strokeWidth=2;" value="Виведення: (True, comparisons)" vertex="1">
+          <mxGeometry height="46" width="240" x="280" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="B8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontColor=#1565C0;fontSize=11;strokeWidth=2;" value="current = current.next" vertex="1">
+          <mxGeometry height="46" width="240" x="280" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="B9" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=15;fillColor=#BBDEFB;strokeColor=#0D47A1;fontColor=#0D47A1;fontStyle=1;fontSize=11;strokeWidth=2;" value="Виведення: (False, comparisons)" vertex="1">
+          <mxGeometry height="46" width="240" x="280" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="B10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#1A237E;fontColor=#1A237E;fontStyle=1;fontSize=11;strokeWidth=2;" value="return" vertex="1">
+          <mxGeometry height="46" width="160" x="140" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="e_1_2" edge="1" parent="1" source="B1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeColor=#263238;strokeWidth=1.5;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_2_3" edge="1" parent="1" source="B2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeColor=#263238;strokeWidth=1.5;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_3_4" edge="1" parent="1" source="B3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeColor=#263238;strokeWidth=1.5;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_4_5" edge="1" parent="1" source="B4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeColor=#263238;strokeWidth=1.5;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B5" value="ТАК">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_5_6" edge="1" parent="1" source="B5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeColor=#263238;strokeWidth=1.5;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_6_7" edge="1" parent="1" source="B6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeColor=#263238;strokeWidth=1.5;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B7" value="ТАК">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_7_10" edge="1" parent="1" source="B7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeColor=#263238;strokeWidth=1.5;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="740" />
+              <mxPoint x="220" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_9_10" edge="1" parent="1" source="B9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeColor=#263238;strokeWidth=1.5;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_6_8" edge="1" parent="1" source="B6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeColor=#546E7A;strokeWidth=1.5;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="B8" value="НІ">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="580" />
+              <mxPoint x="550" y="773" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_8_4" edge="1" parent="1" source="B8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeColor=#546E7A;strokeWidth=1.5;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="B4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="770" />
+              <mxPoint x="200" y="770" />
+              <mxPoint x="200" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_4_9" edge="1" parent="1" source="B4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeColor=#546E7A;strokeWidth=1.5;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="B9" value="НІ">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="625" y="350" />
+              <mxPoint x="625" y="873" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
